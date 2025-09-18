@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Healthy Living — Health Blog</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <style>
+    :root{
+      --pastel-green: #d0f0c0;
+      --sky-blue: #b3e5fc;
+      --light-beige: #fff8e7;
+      --accent-green: #43a047;
+      --text-dark: #333;
+    }
+    body{font-family:'Segoe UI',sans-serif;background:#fff;color:var(--text-dark)}
+    .navbar{background:transparent}
+    .brand{font-weight:700;color:var(--accent-green)}
+
+    .hero{
+      background: linear-gradient(135deg, rgba(208,240,192,0.85), rgba(179,229,252,0.85)), url('https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+      border-radius:16px; padding:90px 20px; margin-top:20px; color:#fff;
+    }
+    .hero h1{font-weight:700;font-size:2.6rem;text-shadow:2px 2px 8px rgba(0,0,0,0.3)}
+    .btn-accent{background:var(--accent-green);color:#fff;border:none}
+
+    .card{border:0;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.06)}
+    .category-badge{background:var(--sky-blue);color:#004d40;font-size:0.8rem;padding:4px 10px;border-radius:50px}
+    .post-thumb{border-radius:10px;object-fit:cover;height:200px;width:100%}
+
+    .routine{background:var(--light-beige);border-radius:12px;padding:20px}
+    .testimonial{background:#f9f9f9;border-left:4px solid var(--accent-green);padding:15px;border-radius:8px}
+
+    footer{background:#111;color:#ccc;text-align:center;padding:30px 0;margin-top:40px;}
+    footer a{color:#fff;margin:0 10px}
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg container">
+    <a class="navbar-brand brand" href="#">Healthy Living</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#nutrition">Nutrition</a></li>
+        <li class="nav-item"><a class="nav-link" href="#fitness">Fitness</a></li>
+        <li class="nav-item"><a class="nav-link" href="#mental">Mental Health</a></li>
+        <li class="nav-item"><a class="nav-link" href="#yoga">Yoga</a></li>
+        <li class="nav-item"><a class="nav-link" href="#wellness">Wellness</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero container text-center">
+    <h1>Eat Well, Live Well, Stay Healthy</h1>
+    <p class="lead">Daily health tips on nutrition, fitness, mental wellness and more.</p>
+    <a href="#featured" class="btn btn-accent mt-3">Read Articles</a>
+  </section>
+
+  <main class="container mt-5">
+    <!-- FEATURED ARTICLES -->
+    <section id="featured">
+      <h3 class="mb-3">Featured Health Articles</h3>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <article class="card">
+            <img class="post-thumb" src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80" alt="nutrition">
+            <div class="card-body">
+              <span class="category-badge">Nutrition</span>
+              <h5 class="mt-2">Top 10 Superfoods for Energy</h5>
+              <p class="text-muted">Boost your immunity and energy naturally with these nutrient-rich foods.</p>
+              <a href="#" class="text-decoration-none">Read more →</a>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6">
+          <article class="card">
+            <img class="post-thumb" src="https://plus.unsplash.com/premium_photo-1664299680539-a53bd5d597ed?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="fitness">
+            <div class="card-body">
+              <span class="category-badge">Fitness</span>
+              <h5 class="mt-2">15-Minute Daily Workout</h5>
+              <p class="text-muted">Quick routines to stay fit without the gym — perfect for busy schedules.</p>
+              <a href="#" class="text-decoration-none">Read more →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="mt-5">
+      <h4>Explore Categories</h4>
+      <div class="row g-3 mt-2">
+        <div class="col-sm-6 col-md-3">
+          <div class="card text-center p-3">
+            <i class="fa-solid fa-apple-whole fa-2x mb-2" style="color:var(--accent-green)"></i>
+            <h6>Nutrition</h6>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="card text-center p-3">
+            <i class="fa-solid fa-person-running fa-2x mb-2" style="color:#0288d1"></i>
+            <h6>Fitness</h6>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="card text-center p-3">
+            <i class="fa-solid fa-spa fa-2x mb-2" style="color:#6a1b9a"></i>
+            <h6>Yoga</h6>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="card text-center p-3">
+            <i class="fa-solid fa-brain fa-2x mb-2" style="color:#ff7043"></i>
+            <h6>Mental Health</h6>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DAILY ROUTINE -->
+    <section class="mt-5">
+      <h4>Daily Wellness Routine</h4>
+      <div class="routine mt-3">
+        <h6>Morning Ritual</h6>
+        <p class="text-muted mb-0">Start your day with a glass of warm water, 10 minutes of stretching, and a protein-packed breakfast.</p>
+      </div>
+    </section>
+
+    <!-- TOOLS -->
+    <section class="mt-5">
+      <h4>Health Tools & Resources</h4>
+      <div class="row g-3 mt-2">
+        <div class="col-md-6">
+          <div class="card p-3">
+            <h6>BMI Calculator</h6>
+            <p class="text-muted small">Track your Body Mass Index easily to know your healthy range.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-3">
+            <h6>Weekly Meal Planner</h6>
+            <p class="text-muted small">Plan balanced meals for your week with this downloadable template.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="mt-5">
+      <h4>Success Stories</h4>
+      <div class="testimonial mt-3">
+        <p class="mb-1">“Following your simple routines helped me lose 8kg and feel more energetic every day.”</p>
+        <small class="text-muted">— Rahul, Reader</small>
+      </div>
+    </section>
+
+   
+  </main>
+  <!-- FOOTER -->
+    <!-- NEWSLETTER -->
+  <footer>
+
+    <section class="mt-5 text-center">
+      <div>
+        <h5>Subscribe to Healthy Living Newsletter</h5>
+        <p class="text-white">Get weekly tips, guides and healthy recipes straight to your inbox.</p>
+        <div class="row justify-content-center">
+          <div class="col-md-6 d-flex gap-2">
+            <input class="form-control" placeholder="Enter your email">
+            <button class="btn btn-accent">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+
+  
+    <p class="mb-1">© 2025 Healthy Living — Wellness for All</p>
+    <div>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+</body>
+</html>
